@@ -20,13 +20,11 @@ are and who they're becoming.
     <img src="{{ '/assets/psalmistenglish.jpeg' | relative_url }}"
          alt="Emmanuel Omhonria in a charcoal double-breasted suit and patterned tie, hands clasped, against a warm studio backdrop."
          width="1614" height="2560" loading="lazy" decoding="async">
-    <figcaption>Weekdays</figcaption>
   </figure>
   <figure>
     <img src="{{ '/assets/psalmistnative.jpeg' | relative_url }}"
          alt="Emmanuel Omhonria in white Nigerian traditional dress, arms folded, against the same warm studio backdrop."
          width="1533" height="2560" loading="lazy" decoding="async">
-    <figcaption>Sundays</figcaption>
   </figure>
 </div>
 

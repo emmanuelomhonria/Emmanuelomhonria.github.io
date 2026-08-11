@@ -352,15 +352,6 @@ p { margin: 0 0 1.2em; }
   border-radius: 3px;
   background: var(--paper-3);
 }
-.portrait-pair figcaption {
-  margin-top: 0.65rem;
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--moss);
-}
-
 /* ---------- Blog index ---------- */
 .post-list { margin-top: 1.6rem; }
 .post-item {
