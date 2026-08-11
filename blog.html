@@ -1,0 +1,27 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+<section class="section wrap">
+  <p class="eyebrow">Journal</p>
+  <h1>Blog</h1>
+  <p style="max-width:42rem; color:var(--ink-soft);">
+    Notes on faith, integrity, and leadership — written from the pulpit
+    and the boardroom, usually both at once.
+  </p>
+
+  <div class="post-list">
+    {% for post in site.posts %}
+      <div class="post-item">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+      </div>
+    {% else %}
+      <p style="color:var(--ink-soft); padding-top:1.3rem;">
+        No posts yet — add a markdown file to <code>_posts/</code> and it'll show up here.
+      </p>
+    {% endfor %}
+  </div>
+</section>

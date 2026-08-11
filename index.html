@@ -1,0 +1,71 @@
+---
+layout: default
+title: Home
+permalink: /
+---
+
+<section class="hero wrap">
+  <p class="eyebrow">{{ site.tagline }}</p>
+  <h1>The same discipline that builds character builds companies.</h1>
+  <p class="lede">{{ site.description }}</p>
+  <div class="cta-row">
+    <a class="btn primary" href="{{ '/blog/' | relative_url }}">Read the blog</a>
+    <a class="btn" href="{{ '/about/' | relative_url }}">About me</a>
+  </div>
+</section>
+
+<div class="throughline">
+
+  <section class="section wrap">
+    <span class="stitch-label">{{ site.throughline[0] }}</span>
+    <p class="eyebrow">01 — What I do</p>
+    <h2>Leading people, in the church and at work</h2>
+    <p style="max-width:42rem; color:var(--ink-soft);">
+      I pastor, and I lead a team at an international tech company —
+      two rooms that ask the same question in different accents:
+      can people trust you when it costs you something? Everything I
+      write and build starts there.
+    </p>
+  </section>
+
+  <section class="section wrap">
+    <span class="stitch-label">{{ site.throughline[1] }}</span>
+    <p class="eyebrow">02 — Recent posts</p>
+    <h2>From the blog</h2>
+    <div class="post-list">
+      {% for post in site.posts limit:3 %}
+        <div class="post-item">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+          <a class="post-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 130 }}</p>
+        </div>
+      {% else %}
+        <p style="color:var(--ink-soft);">Your first post will show up here once you publish it.</p>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <span class="stitch-label">{{ site.throughline[2] }}</span>
+    <p class="eyebrow">03 — What I'm building</p>
+    <h2>Projects</h2>
+    <p style="max-width:42rem; color:var(--ink-soft);">
+      A look at the ventures where the pulpit and the boardroom meet —
+      including a hiring agency built to train people in integrity and
+      communication before it ever places them on a job.
+    </p>
+    <p><a href="{{ '/projects/' | relative_url }}">See the projects &rarr;</a></p>
+  </section>
+
+  <section class="section wrap">
+    <span class="stitch-label">{{ site.throughline[3] }}</span>
+    <p class="eyebrow">04 — Get in touch</p>
+    <h2>Let's talk</h2>
+    <p style="max-width:42rem; color:var(--ink-soft);">
+      Speaking, consulting, ministry, or just a good conversation about
+      leadership — reach out.
+    </p>
+    <p><a class="btn" href="{{ '/contact/' | relative_url }}">Contact</a></p>
+  </section>
+
+</div>

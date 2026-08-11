@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<article>
+  <header class="post-header wrap">
+    <p class="eyebrow">{{ page.category | default: "Journal" }}</p>
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">
+      {{ page.date | date: "%B %-d, %Y" }}
+      {% if page.tags.size > 0 %} · {{ page.tags | join: " · " }}{% endif %}
+    </p>
+  </header>
+
+  <div class="post-body prose">
+    {{ content }}
+  </div>
+
+  <div class="post-footer wrap">
+    <a href="{{ '/blog/' | relative_url }}">&larr; Back to all posts</a>
+    <a href="mailto:{{ site.email }}?subject=Re: {{ page.title }}">Reply by email</a>
+  </div>
+</article>
