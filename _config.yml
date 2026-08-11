@@ -1,16 +1,16 @@
 # ============================================
 # SITE SETTINGS — edit the values on the right
 # ============================================
-title: "Your Name"                     # TODO: replace with your name
+title: "Emmanuel Omhonria"
 tagline: "Pastor. Strategist. Builder of people."
 description: >-
   Reflections on faith, character, and leadership — from the pulpit
   to the boardroom. Notes on integrity in business, building teams,
   and the discipline it takes to do both well.
 
-email: you@example.com                 # TODO
+email: emmanuelpsalm@gmail.com
 linkedin: https://linkedin.com/in/your-handle   # TODO
-url: "https://your-username.github.io"          # TODO: your Pages URL
+url: "https://emmanuelomhonria.github.io"       # your Pages URL
 baseurl: ""                            # keep "" for a user/org site
                                         # (username.github.io repo);
                                         # set to "/repo-name" for a
