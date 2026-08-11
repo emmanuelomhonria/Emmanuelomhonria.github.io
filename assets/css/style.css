@@ -329,6 +329,38 @@ p { margin: 0 0 1.2em; }
   margin-bottom: 0.7em;
 }
 
+/* ---------- Portrait pair (about page) ----------
+   Two studio portraits side by side — the same "two rooms" idea the
+   throughline motif carries on the home page. Both are cropped to one
+   shared ratio so they line up; without that they differ just enough
+   (0.63 vs 0.60) to look misaligned. */
+.portrait-pair {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  margin: 2.4rem 0 2.8rem;
+}
+.portrait-pair figure { margin: 0; }
+.portrait-pair img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  /* Faces sit high in both frames — bias the crop upward. */
+  object-position: 50% 16%;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--paper-3);
+}
+.portrait-pair figcaption {
+  margin-top: 0.65rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--moss);
+}
+
 /* ---------- Blog index ---------- */
 .post-list { margin-top: 1.6rem; }
 .post-item {
