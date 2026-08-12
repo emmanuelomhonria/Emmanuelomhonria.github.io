@@ -28,6 +28,15 @@
     })();
   </script>
   <script src="{{ '/assets/js/theme.js' | relative_url }}" defer></script>
+
+  {% if page.url == '/contact/' %}
+  <!-- Calendly, loaded only on the page that books. booking.js checks
+       for the Calendly global at click time, so the async race here is
+       safe: an early click just follows the link instead. -->
+  <link rel="stylesheet" href="https://assets.calendly.com/assets/external/widget.css">
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <script src="{{ '/assets/js/booking.js' | relative_url }}" defer></script>
+  {% endif %}
 </head>
 <body>
   {% include header.html %}
