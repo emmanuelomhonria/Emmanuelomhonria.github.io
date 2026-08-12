@@ -39,8 +39,28 @@ leadership — I'd like to hear from you.
     <span class="eyebrow">Email</span>
     <a href="mailto:{{ site.email }}">{{ site.email }}</a>
   </div>
+  {% if site.linkedin %}
   <div class="contact-row">
     <span class="eyebrow">LinkedIn</span>
     <a href="{{ site.linkedin }}">{{ site.linkedin }}</a>
   </div>
+  {% endif %}
+  {% if site.youtube %}
+  <div class="contact-row">
+    <span class="eyebrow">YouTube</span>
+    <a href="{{ site.youtube }}">{{ site.youtube }}</a>
+  </div>
+  {% endif %}
+  {% if site.instagram %}
+  <div class="contact-row">
+    <span class="eyebrow">Instagram</span>
+    <a href="{{ site.instagram }}">{{ site.instagram }}</a>
+  </div>
+  {% endif %}
+  {% if site.facebook %}
+  <div class="contact-row">
+    <span class="eyebrow">Facebook</span>
+    <a href="{{ site.facebook }}">{{ site.facebook }}</a>
+  </div>
+  {% endif %}
 </div>

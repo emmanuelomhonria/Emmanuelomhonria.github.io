@@ -9,7 +9,15 @@ description: >-
   and the discipline it takes to do both well.
 
 email: emmanuelpsalm@gmail.com
-linkedin: https://linkedin.com/in/your-handle   # TODO
+
+# Social links. Every one of these is optional: leave a value blank
+# (e.g. `youtube:`) and that link disappears from the about and
+# contact pages automatically — no template editing. The footer links
+# are separate and still hardcoded.
+linkedin: https://linkedin.com/in/your-handle    # TODO
+youtube: https://youtube.com/@your-handle        # TODO
+instagram: https://instagram.com/your-handle     # TODO
+facebook: https://facebook.com/your-handle       # TODO
 url: "https://emmanuelomhonria.github.io"       # your Pages URL
 baseurl: ""                            # keep "" for a user/org site
                                         # (username.github.io repo);

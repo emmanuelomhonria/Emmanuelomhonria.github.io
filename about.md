@@ -52,3 +52,10 @@ I write about faith, integrity, and character on
 [LinkedIn]({{ site.linkedin }}), and I'm building a hiring agency that
 trains people in integrity and communication before matching them with
 work. You can read more on the [projects page]({{ '/projects/' | relative_url }}).
+
+<ul class="social-links">
+  {% if site.linkedin %}<li><a href="{{ site.linkedin }}">LinkedIn</a></li>{% endif %}
+  {% if site.youtube %}<li><a href="{{ site.youtube }}">YouTube</a></li>{% endif %}
+  {% if site.instagram %}<li><a href="{{ site.instagram }}">Instagram</a></li>{% endif %}
+  {% if site.facebook %}<li><a href="{{ site.facebook }}">Facebook</a></li>{% endif %}
+</ul>
